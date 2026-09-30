@@ -29,7 +29,4 @@ Please follow the [official instuctions](https://julialang.org/downloads/) to do
 ```julia-repl
 julia> # Press ] to enter pkg mode
 
-(@v1.13) pkg> activate .
-
-(BachelorThesis) pkg> instantiate
 ```
