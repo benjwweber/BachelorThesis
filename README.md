@@ -39,7 +39,12 @@ To initialize the models
 - Download the ViT-B/16 weights distilled from LVD-1689M  from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3#pretrained-models),
 - save the as ` "./data/parameters/pytorch/dinov3_vitl16_pretrain_lvd1689m.pth"` and
 - run the `./src/parameters/convert.jl` script.
-- Run the `./src/parameters/convert.jl` script.
-Lux parameters and states are saved as `.jld2` files in the `./data/checkpoints/` folder.
+- Run the `./src/parameters/initialize.jl` script.
+- Run the `./src/train/queues.jl` script to initialize the queues.
+
+Lux parameters and states are saved as `.jld2` files in the `./data/checkpoints/` folder. Pre-initialized queues are saved as `./data/checkpoints/1024.jld2`.
+
+## Data
+The included scripts assume `./data/paths.jld2` to hold all valid paths to the sqlite storage corresponding to the slides. The sqlite is expected to provide a tile id, level, x, y and jpeg upon a query. Please make sure to configure the storage of your slides accordingly or modify the underlying scripts.
 
 ## Continued Pre-training
