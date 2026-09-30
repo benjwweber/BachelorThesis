@@ -33,3 +33,13 @@ julia> # Press ] to enter pkg mode
 
 (BachelorThesis) pkg> instantiate
 ```
+
+## Initialization
+To initialize the models
+- Download the ViT-B/16 weights distilled from LVD-1689M  from the [official DINOv3 repository](https://github.com/facebookresearch/dinov3#pretrained-models),
+- save the as ` "./data/parameters/pytorch/dinov3_vitl16_pretrain_lvd1689m.pth"` and
+- run the `./src/parameters/convert.jl` script.
+- Run the `./src/parameters/convert.jl` script.
+Lux parameters and states are saved as `.jld2` files in the `./data/checkpoints/` folder.
+
+## Continued Pre-training
