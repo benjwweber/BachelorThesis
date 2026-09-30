@@ -1,4 +1,3 @@
-#= MacroTools =#
 using MacroTools
 using ArgCheck
 
@@ -275,6 +274,10 @@ function recursive_3(expr; layers, layer, exprs)
     end
     return expr
 end
+
+"""
+
+"""
 macro apply(expr)
     return esc(apply_(:(()), expr))
 end
