@@ -132,7 +132,7 @@ function ema(x, s, α)
     return (x * α) + (s * (1 - α))
 end
 
-function ahh(parameters_teacher, parameters_student, momentum)
+function update_teacher(parameters_teacher, parameters_student, momentum)
     return fmap(
         Base.Fix{3}(ema, momentum),
         parameters_teacher,
@@ -146,11 +146,3 @@ function update_teacher!(teacher, student, momentum)
     end
     return nothing
 end
-
-# function update_teacher!(teacher, student, momentum)
-#     return teacher.ps = fmap(
-#         Base.Fix{3}(ema, momentum),
-#         teacher.ps,
-#         student.parameters
-#     )
-# end
