@@ -11,8 +11,7 @@ module Losses
 		GramLoss,
 		iBOTLoss,
 		KoLeoLoss,
-		PreLoss,
-		RefLoss
+		PreTrainingObjective
 
 	include("../apply.jl")
 	include("../container.jl")
@@ -23,5 +22,5 @@ module Losses
 	include("./ibot.jl")
 	include("./koleo.jl")
 	include("./pre.jl")
-	include("./ref.jl")
+	# include("./ref.jl")
 end
