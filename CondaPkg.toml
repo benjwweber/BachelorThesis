@@ -1,0 +1,8 @@
+[deps]
+python = ""
+
+[pip.deps]
+tensorboard-plugin-profile = ""
+torchvision = ""
+torch = ""
+tensorboard = ""
