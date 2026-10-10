@@ -25,6 +25,7 @@ Please refer to the whole [thesis](documents/thesis.pdf) for more information.
 
 ## Getting Started
 Please follow the [official instuctions](https://julialang.org/downloads/) to download and install `juliaup` and `julia`. Once installed open up the REPL and instantiate the environment
+
 ```julia-repl
 julia> # Press ] to enter pkg mode
 
