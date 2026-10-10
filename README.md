@@ -22,3 +22,13 @@ We were unable to evaluate our approach as training aborted due to a memory leak
 Analysis shows that the presented implementation suffers from increased compilation overhead. Profiling suggests that later iterations run at a constant pace.
 
 Please refer to the whole [thesis](documents/thesis.pdf) for more information.
+
+## Getting Started
+Please follow the [official instuctions](https://julialang.org/downloads/) to download and install `juliaup` and `julia`. Once installed open up the REPL and instantiate the environment
+```julia-repl
+julia> # Press ] to enter pkg mode
+
+(@v1.13) pkg> activate .
+
+(BachelorThesis) pkg> instantiate
+```
